@@ -12,6 +12,6 @@ class Solution:
             p=p*nums[i]
         return answer
 
-#time complexity o(n) :: Optimized method
-#By ::Prabesh Amgain
-#date :: 2026-08-25
+#time complexity o(n) :: Optimized method.
+#By ::Prabesh Amgain.
+#date :: 2026-08-25.
