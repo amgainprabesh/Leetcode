@@ -1,0 +1,21 @@
+class Solution:
+    def mergeAlternately(self, word1: str, word2: str) -> str:
+        char=''
+        a,b=0,0
+        cur=1
+        while a<len(word1) and b<len(word2):
+            if cur==1:
+                char +=word1[a]
+                cur=2
+                a+=1
+            if cur==2:
+                char +=word2[b]
+                cur=1
+                b+=1
+        while a<len(word1):
+            char +=word1[a]
+            a+=1
+        while b<len(word2):
+            char +=word2[b]
+            b+=1
+        return char
